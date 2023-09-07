@@ -8,6 +8,7 @@ const UserComponent = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
   const REACT_APP_SERVER_DOMIN = process.env.REACT_APP_SERVER_DOMIN;
 
 
