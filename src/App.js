@@ -18,14 +18,14 @@ function App() {
   return (
     <Router> 
       <Routes> 
-        <Route path="/" element={<HomeScreen />} />
+        <Route path="/" element={<Login />} />
         <Route path="/products" element={<ProductScreen />} />
         <Route path="/orders" element={<OrderScreen />} />
         <Route path="/order" element={<OrderDetailScreen />} />
         <Route path="/addproduct" element={<AddProduct />} />
         <Route path="/users" element={<UsersScreen />} />
         <Route path="/product/:id/edit" element={<ProductEditScreen />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/HomeScreen" element={<HomeScreen />} />
         <Route path="/create-vendor" element={<Createvendor />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

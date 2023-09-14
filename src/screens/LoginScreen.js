@@ -59,7 +59,7 @@ const Login = ({ userData }) => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full space-y-4 hover:shadow-lg">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-pink-600">Login</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-center text-pink-600">Admin Login</h2>
         {isLoading ? (
           <div className="flex justify-center items-center h-screen">
             <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-opacity-75"></div>
@@ -96,24 +96,7 @@ const Login = ({ userData }) => {
               />
             </div>
 
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="remember-me"
-                  className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                />
-                <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                  Remember me
-                </label>
-              </div>
-
-              <div className="text-sm">
-                <Link to="/forgot-password" className="font-medium text-indigo-600 hover:text-indigo-500">
-                  Forgot your password?
-                </Link>
-              </div>
-            </div>
+            
 
             <div>
               <button
@@ -124,12 +107,7 @@ const Login = ({ userData }) => {
               </button>
             </div>
 
-            <div className="text-center text-sm">
-              <span className="text-gray-600">Don't have an account? </span>
-              <Link to="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Sign Up
-              </Link>
-            </div>
+            
           </form>
         )}
       </div>

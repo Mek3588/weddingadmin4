@@ -9,12 +9,12 @@ const UserComponent = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  const REACT_APP_SERVER_DOMIN = process.env.REACT_APP_SERVER_DOMIN;
+  //const REACT_APP_SERVER_DOMIN = process.env.REACT_APP_SERVER_DOMIN;
 
 
   useEffect(() => {
     axios
-      .get(`${REACT_APP_SERVER_DOMIN}/users`) 
+      .get(`${process.env.REACT_APP_SERVER_DOMIN}/users`) 
       .then((response) => {
         setUsers(response.data);
         setLoading(false);
@@ -32,7 +32,7 @@ const UserComponent = () => {
     }
     
     try {
-      await axios.delete(`${REACT_APP_SERVER_DOMIN}/users/${email}`);
+      await axios.delete(`${process.env.REACT_APP_SERVER_DOMIN}/users/${email}`);
       // Handle successful deletion
       console.log(`User with email ${email} deleted.`);
     } catch (error) {

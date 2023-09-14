@@ -27,15 +27,7 @@ const Header = () => {
       <div className="col-search">
         <form className="searchform">
           <div className="input-group">
-            <input
-              list="search_terms"
-              type="text"
-              className="form-control"
-              placeholder="Search term"
-            />
-            <button className="btn btn-light bg" type="button">
-              <i className="far fa-search"></i>
-            </button>
+           
           </div>
           <datalist id="search_terms">
             <option value="Products" />
